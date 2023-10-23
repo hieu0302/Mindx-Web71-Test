@@ -5,6 +5,8 @@ import appRouter from './routers/index.js';
 
 const app = express();
 
+app.use(express.json());
+
 app.use('/api', appRouter);
 
 const PORT = 3000;
